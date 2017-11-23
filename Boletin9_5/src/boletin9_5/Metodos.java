@@ -22,6 +22,7 @@ public class Metodos {
     }
 
     public void serieA() {
+        //Serie de numeros sumando +2 cada vez.
         num = 2;
 
         Metodos.this.pedirElementos();
@@ -34,6 +35,7 @@ public class Metodos {
     }
 
     public void serieB() {
+        //Serie de numeros naturales intercalando positivo y negativo.
         num = 1;
         int cont = 0;
 
@@ -52,16 +54,17 @@ public class Metodos {
     }
 
     public void serieC() {
-        int num1 = 1, num2 = 1;
+        //Serie de Fibonacci.
+        int fibo1 = 1, fibo2 = 1;
 
         Metodos.this.pedirElementos();
         cant = cant - 2;
         System.out.print("0, ");
         for (i = 0; i < cant; i++) {
-            System.out.print(num1 + ", ");
-            num2 = num1 + num2;
-            num1 = num2 - num1;
+            System.out.print(fibo1 + ", ");
+            fibo2 = fibo1 + fibo2;
+            fibo1 = fibo2 - fibo1;
         }
-        System.out.println(num1);
+        System.out.println(fibo1);
     }
 }
