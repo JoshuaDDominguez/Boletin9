@@ -5,6 +5,8 @@
  */
 package boletin9_5;
 
+import java.util.Scanner;
+
 /**
  *
  * @author jdominguezdominguez
@@ -16,8 +18,11 @@ public class Boletin9_5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Metodos obx=new Metodos();
-        obx.serieB();
+        Scanner sc=new Scanner(System.in);
+        Menu obx=new Menu();
+        System.out.println("****Menu****\n\na....   2 4 6 8 etc.\nb.... -1 +2 -3 +4 -5 etc.\nc....  0, 1, 1, 2, 3, 5, 8, etc");
+        String op=sc.nextLine();
+        obx.menu(op);
     }
     
 }
