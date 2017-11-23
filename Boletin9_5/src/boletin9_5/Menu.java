@@ -5,32 +5,32 @@
  */
 package boletin9_5;
 
-
 /**
  *
  * @author jdominguezdominguez
  */
 public class Menu {
-    Metodos obx=new Metodos();
-    
-    public void menu(String op){     
-        
-        switch(op){
+
+    Metodos obx = new Metodos();
+
+    public void menu(String op) {
+
+        switch (op) {
             case "a":
-                 obx.serieA();
-                 break;
-                 
+                obx.serieA();
+                break;
+
             case "b":
                 obx.serieB();
                 break;
-                
+
             case "c":
                 obx.serieC();
                 break;
-                
+
             default:
                 System.out.println("Error!");
                 break;
-         }
+        }
     }
 }
